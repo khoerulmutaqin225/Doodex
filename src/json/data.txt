@@ -1,0 +1,13 @@
+[options]
+; This is the password that allows database operations:
+db_user = odoo
+db_password = odoo
+admin_passwd = Achille03
+http_port = 8069
+logfile = /var/log/odoo/odoo-vdl.log
+addons_path=/opt/odoo/enterprise/addons,/opt/odoo/odoo-server/addons,/opt/odoo/Odoo16_VDL,/opt/odoo/aneh/purchase_product_optional
+proxy_mode = True
+log_level = debug
+log_handler = :DEBUG
+limit_time_cpu = 60000
+limit_time_real = 120000
