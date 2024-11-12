@@ -1,0 +1,71 @@
+// -- ------------------------------------
+// -- Perhatian
+// -- Khusus untuk Linux User :
+// -- hasil dari Copy Path tidak perlu diganti dengan double-backslash \\
+// -- ------------------------------------
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "prestaterre17",
+      "type": "debugpy",
+      "request": "launch",
+      "stopOnEntry": false,
+      "console": "internalConsole",
+      "python": "/opt/odoo/Prestaterre17/venv/bin/python3", // cari dengan which python3
+      "program": "/opt/odoo/odoo-server-17/odoo/odoo-bin",
+      "args": [
+        "--config=/opt/odoo/odoo-server-17/odoo-prestaterre-17.conf",
+        // "--database=Prestaterre17",
+        // "--update=certification_app,forms_creator,import_datas,prestaterre_survey,web_search_edit_favorite_filter", // merge_produc_17 ,certification_app
+        "--database=PRESTATERRE Live", //   merge_products ,EmmaTestForm ,Prestaterre17
+        
+        "--update=certification_app,mail_manual_routing"
+      ]
+      // "cwd": "/opt/odoo/odoo-server-17/odoo"
+    },
+    {
+      "name": "Launch Chrome",
+      "request": "launch",
+      "type": "chrome",
+      "url": "http://localhost:8069",
+      "webRoot": "${workspaceFolder}",
+      "sourceMaps": true,
+      "trace": true
+    },
+    {
+      "name": "Odoo Testing",
+      "type": "debugpy",
+      "request": "launch",
+      "stopOnEntry": false,
+      "console": "internalConsole",
+      "python": "/opt/odoo/Prestaterre17/venv/bin/python3", // cari dengan which python3
+      "program": "/opt/odoo/odoo-server-17/odoo/odoo-bin",
+      "args": [
+        "--config=/opt/odoo/odoo-server-17/odoo-prestaterre-17.conf",
+        "--update=merge_products", // merge_produc_17 ,certification_app
+        "--database=merge_produc_17", //   merge_products ,EmmaTestForm    
+        "--test-enable",
+      ]
+      // "cwd": "/opt/odoo/odoo-server-17/odoo"
+    },
+    {
+      "name": "prestaterre17 PREPROD",
+      "type": "debugpy",
+      "request": "launch",
+      "stopOnEntry": false,
+      "console": "internalConsole",
+      "python": "/opt/odoo/Prestaterre17/venv/bin/python3", // cari dengan which python3
+      "program": "/opt/odoo/odoo-server-17/odoo/odoo-bin",
+      "args": [
+        "--config=/opt/odoo/odoo-server-17/odoo-prestaterre-17.conf",
+        // "--database=PRESTATERRE Live",
+        // "--update=certification_app", // merge_produc_17 ,certification_app
+        // "--database=PRESTATERRE Live", //   merge_products ,EmmaTestForm ,Prestaterre17
+        
+        // "--update=migration, import_datas,certification_app,forms_creator"
+      ]
+      // "cwd": "/opt/odoo/odoo-server-17/odoo"
+    },    
+  ]
+}
