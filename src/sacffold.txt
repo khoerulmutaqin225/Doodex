@@ -1,0 +1,16 @@
+Run with cmd
+cmd /C ""C:/Program Files/Odoo18/odoo18/Scripts/python.exe" "C:/Program Files/Odoo18/odoo-server-18/odoo-bin" --config="C:\Program Files\Odoo18\odoo-18.conf""
+
+Run with powershell
+& "C:/Program Files/Odoo18/odoo18/Scripts/python.exe" "C:/Program Files/Odoo18/odoo-server-18/odoo-bin" "--config=C:\Program Files\Odoo18\odoo-18.conf" 
+
+Run scaffold for new module
+cmd /C ""C:/Program Files/Odoo18/odoo18/Scripts/python.exe" "C:/Program Files/Odoo18/odoo-server-18/odoo-bin" scaffold CustmModule"
+
+
+Uprade tree to list Odoo18
+
+cmd /C ""C:/Program Files/Odoo18/odoo18/Scripts/python.exe" "C:/Program Files/Odoo18/odoo-server-18/odoo-bin" upgrade_code --addons-path="C:\Program Files\Odoo18\CLuedoo-18\test""
+
+
+ 
